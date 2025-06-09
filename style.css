@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 6fr
+}
+
+.header {
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4rem 4rem;
+
+}
+
+.header img {
+    width: 5%;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    align-self: center;
+}
+
+.header .btns {
+    justify-content: space-around;
+}
+
+.header .profile {
+    justify-content: space-evenly;
+}
+
+.header .search, .intro {
+    padding-left: 1rem;
+
+}
+
+.search :first-child, .intro :first-child {
+    margin-right: 1rem; 
+}
+
+.search input {
+    width: 30vw;
+    border-radius: 1rem;
+    background-color: rgb(226, 232, 240);
+    height: 1rem;
+}
+
+.intro > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav {
+    grid-row: 1 / 3;
+    background-color: #1c94d3;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    padding: 20px;
+}
+
+.nav .nav-title {
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.nav img {
+    width: 1.3rem;
+}
+
+.nav .nav-content-1 {
+    margin-bottom: 2rem;
+}
+
+
+.nav div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5px;
+    grid-auto-rows: max-content;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5%;
+    border-left: 0.5rem solid #e3b030;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 3fr 1fr
+
+}
+
+.side-pg{
+    display: grid;
+}
+
+.main,
+.side-pg {
+    background-color: #e2e8f0;
+    padding: 20px;
+}
+
+.bkg {
+    background-color: #fff;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+.card .icons {
+    display: flex;
+    height: 3ch;
+    align-self: flex-end;
+    justify-self: flex-end;
+    gap: 2px;
+}
+
+
+button {
+    border-radius: 1rem;
+    border: 0px solid;
+    background-color: #1c94d3;
+    padding: 5px 25px;
+    color: aliceblue;
+}
+
+
